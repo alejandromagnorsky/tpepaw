@@ -1,0 +1,95 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div wicket:id="feedback" class="formErrors"/>
+			<div class="requiredFields">* <wicket:message key="requiredFields"></wicket:message></div>
+			<div class="column">
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="title"></wicket:message> *</label>
+					</div>
+					<div class="column">
+						<input type="text" size="25" maxlength="25" wicket:id="title" />
+					</div>
+				</div>
+				<div class="description-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="description"></wicket:message></label>
+					</div>
+					<div class="column">
+						<textarea rows="5" cols="40" wicket:id="description"></textarea>
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="estimatedTime"></wicket:message></label>
+					</div>
+					<div class="column">
+						<input type="text" size="25" maxlength="10" wicket:id="estimatedTime" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="assignedUser"></wicket:message></label>
+					</div>
+					<div class="column">
+						<select wicket:id="assignedUser" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="priority"></wicket:message></label>
+					</div>
+					<div class="column">
+						<select wicket:id="priority" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="type"></wicket:message></label>
+					</div>
+					<div class="column">
+						<select wicket:id="type" />
+					</div>
+				</div>
+			</div>
+			
+			<div wicket:id="affectedVersions">
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label" wicket:id="affectedVersionsLabel"></label>
+					</div>
+					<div class="column">        
+	                	<div class="checkbox-items">
+							<div wicket:id="affectedVersionsView">	   
+	                           	<input type="checkbox" wicket:id="checkbox"/>
+	                           	<span wicket:id="name"></span>
+							</div>
+						</div>
+						<div class="checkbox-checkall"><input type="checkbox" wicket:id="versionSelector" /></div>
+						<div class="checkbox-checkall checkall-label"><wicket:message key="checkAll"></wicket:message></div>
+					</div>
+				</div>				
+			</div>
+			
+			<div wicket:id="fixedVersions">
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label" wicket:id="fixedVersionsLabel"></label>
+					</div>
+					<div class="column">        
+	                	<div class="checkbox-items">
+							<div wicket:id="fixedVersionsView">	   
+	                           	<input type="checkbox" wicket:id="checkbox"/>
+	                           	<span wicket:id="name"></span>
+							</div>
+						</div>
+						<div class="checkbox-checkall"><input type="checkbox" wicket:id="versionSelector" /></div>
+						<div class="checkbox-checkall checkall-label"><wicket:message key="checkAll"></wicket:message></div>
+					</div>
+				</div>	
+			</div>
+			
+		</wicket:panel>
+	</body>
+</html>

@@ -1,0 +1,125 @@
+.spacer {
+	clear:both;
+}
+
+#form-style {
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.requiredFields {
+	font-weight: bold;
+	font-style: italic;
+	padding-bottom: 14px;
+}
+
+.form-left-column {
+	float:left;
+	width: 350px;
+}
+
+.form-center-column {
+	margin-left:150px;
+	width: 300px;
+}
+
+
+.form-right-column {
+	float:left;
+	width: 300px;
+}
+
+#form-style input.form-button {
+	width: 110px;
+}
+
+#form-style div.form-buttons {
+	margin-top: 10px;
+	margin-left:140px;
+}
+
+#form-style input.visibility-radio {
+	margin-right: 5px;
+	margin-top: 0px;
+}
+
+#form-style div.visibility-radio1 {
+	float:left;
+}
+
+#form-style div.visibility-radio2 {
+	float:right;
+}
+
+#form-style div.visibility-radios {
+	float: left;
+}
+
+#form-style h1 {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:8px;
+}
+
+#form-style p {
+	font-size:11px;
+	color:#666666;
+	margin-bottom:20px;
+	border-bottom:solid 1px #b7ddf2;
+	padding-bottom:10px;
+}
+
+#form-style label {
+	display:block;
+	font-weight:bold;
+	text-align:right;
+	width:140px;
+	margin-bottom:10px;
+	float:left;
+}
+
+#form-style .form-hint {
+	color:#666666;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	text-align:right;
+	width:140px;
+}
+
+#form-style input {
+	float:left;
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	width:130px;
+	margin:2px 0 30px 10px;
+}
+
+input#projectName, input#issueName {
+	width: 160px;
+}
+
+#form-style select {
+
+	float:left;
+	font-size:12px;
+	border:solid 1px #aacfe4;
+	width:100px;
+	margin:2px 0 20px 10px;
+	background-color: #FFFFFF;
+}
+
+#form-style textarea {
+	float:left;
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	width:160px;
+	height:200px;
+	margin:2px 0 20px 10px;
+}
+
+.error-message {
+	color: #8a1f21;
+}

@@ -1,0 +1,27 @@
+<html>
+	<body>
+		<wicket:extend>
+			<div class="clear"></div>
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+						<div id="content-main-header-title">
+							<wicket:message key="editUserTitle"></wicket:message>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="form-wrapper">
+					<form class="generic-form" wicket:id="editUserForm">
+						<div wicket:id="userFormPanel"></div>
+						<div class="clear"></div>
+						<div class="submit-button-wrapper">
+							<input class="submit-button" type="submit" wicket:id="editUser" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</wicket:extend>
+	</body>
+</html>

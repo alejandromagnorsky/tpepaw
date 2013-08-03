@@ -1,0 +1,73 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div wicket:id="feedback" class="formErrors"/>
+			<div class="requiredFields">* <wicket:message key="requiredFields"></wicket:message></div>
+			
+			<div class="column">
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="username"></wicket:message> *</label>
+					</div>
+					<div class="column">
+						<input type="text" size="25" maxlength="25" wicket:id="username" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="password"></wicket:message> *</label>
+					</div>
+					<div class="column">
+						<input type="password" size="25" maxlength="25" wicket:id="password" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="confirmPassword"></wicket:message> *</label>
+					</div>
+					<div class="column">
+						<input type="password" size="25" maxlength="25" wicket:id="confirmPassword" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">			
+						<label class="form-label"><wicket:message key="fullname"></wicket:message> *</label>
+					</div>
+					<div class="column">
+						<input type="text" size="25" maxlength="25" wicket:id="fullname" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">			
+						<label class="form-label"><wicket:message key="email"></wicket:message> *</label>
+					</div>
+					<div class="column">
+						<input type="text" size="25" maxlength="50" wicket:id="email" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="column">	
+				<div wicket:id="defaultViews">
+					<div class="generic-input-container">
+						<div class="column left">
+							<label class="form-label" wicket:id="defaultViewsLabel"></label>
+						</div>
+						<div class="column">        
+		                	<div class="checkbox-items">
+								<div wicket:id="defaultViewsView">	   
+		                           	<input type="checkbox" wicket:id="checkbox"/>
+		                           	<span wicket:id="name"></span>
+								</div>
+							</div>
+							<div class="checkbox-checkall"><input type="checkbox" wicket:id="viewSelector" /></div>
+							<div class="checkbox-checkall checkall-label"><wicket:message key="checkAll"></wicket:message></div>
+						</div>
+					</div>				
+				</div>
+			</div>
+			
+			
+		</wicket:panel>
+	</body>
+</html>

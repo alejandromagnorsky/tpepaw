@@ -1,0 +1,42 @@
+<html>
+	<body>
+		<wicket:extend>
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+						<div id="content-main-header-title">
+							<wicket:message key="userProfileTitle"></wicket:message>
+						</div>
+					</div>
+					<a href="" wicket:id="editUser" class="button-small green" >
+						<div class="button-image-small userPanelIcon"></div>
+						<div class="button-link">
+							<wicket:message key="edit"/>
+						</div>
+					</a>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<div class="list-element">
+					<div class="list-element-body">
+						<wicket:message key="rank" class="bold"></wicket:message>: <span wicket:id="rank"></span><br/>
+						<wicket:message key="username" class="bold"></wicket:message>: <span wicket:id="username"></span><br/>
+						<wicket:message key="fullname" class="bold"></wicket:message>: <span wicket:id="fullname"></span><br/>						
+						<wicket:message key="email" class="bold"></wicket:message>: <span wicket:id="email"></span><br/>	
+						<span wicket:id="invalidated" class="bold"></span><br/>					
+					</div>							
+				</div>
+				
+				
+				<div class="header-item-title">
+					<wicket:message key="following"/>
+				</div>
+				
+				<div wicket:id="followingIssues" class="list-element-body">
+					<a href="" wicket:id="link"><span wicket:id="title"></span></a>
+				</div>
+			</div>
+		</wicket:extend>
+	</body>
+</html>

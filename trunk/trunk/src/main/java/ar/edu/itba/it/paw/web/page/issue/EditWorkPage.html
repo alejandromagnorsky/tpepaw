@@ -1,0 +1,26 @@
+<html>
+	<body>
+		<wicket:extend>
+			
+			<div class="clear"></div>
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+					<div id="content-header-breadcrumbs" wicket:id="breadcrumbsPanel"></div>				
+						<div id="content-main-header-title">
+							<wicket:message key="editWork"></wicket:message>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="form-wrapper">
+					<form class="generic-form" wicket:id="editWorkForm">
+						<div wicket:id="workFormPanel"></div>
+						<input class="submit-button" type="submit" wicket:id="editWork" />
+					</form>
+				</div>
+			</div>
+		</wicket:extend>
+	</body>
+</html>

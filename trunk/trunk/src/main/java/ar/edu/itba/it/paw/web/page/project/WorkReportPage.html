@@ -1,0 +1,47 @@
+<html>
+	<body>
+		<wicket:extend>
+			
+			<div class="clear"></div>
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+						<div id="content-header-breadcrumbs" wicket:id="breadcrumbsPanel"></div>
+						<div id="content-main-header-title">
+							<wicket:message key="workReport"></wicket:message>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="form-wrapper">
+					<form class="generic-form" wicket:id="workReportForm">
+						<div wicket:id="workReportFormPanel"></div>
+						<input class="submit-button" type="submit" wicket:id="getReport" />
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+						<div id="content-main-header-title">
+							<wicket:message key="result"></wicket:message>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<div wicket:id="reports" class="list-element">
+					<div class="list-element-title">
+						<span wicket:id="user"></span><br/>
+					</div>
+					<div class="list-element-body">
+						<wicket:message key="time"></wicket:message>: <span wicket:id="time"></span><br/>
+					</div>							
+				</div>
+			</div>
+		</wicket:extend>
+	</body>
+</html>

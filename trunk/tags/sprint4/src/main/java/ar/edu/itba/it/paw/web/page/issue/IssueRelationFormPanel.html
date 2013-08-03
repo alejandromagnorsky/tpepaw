@@ -1,0 +1,84 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div wicket:id="feedback" class="formErrors"/>
+			<!--<div class="requiredFields">* <wicket:message key="requiredFields"></wicket:message></div>-->
+			<div class="column">
+				<div wicket:id="dependsOn">
+					<div class="generic-input-container">
+						<div class="column left">
+							<label class="form-label" wicket:id="dependsOnLabel"></label>
+						</div>
+						<div class="column">        
+		                	<div class="checkbox-items">
+								<div wicket:id="dependsOnView">	   
+		                           	<input type="checkbox" wicket:id="checkbox"/>
+		                           	<span wicket:id="title"></span>
+								</div>
+							</div>
+							<div class="checkbox-checkall"><input type="checkbox" wicket:id="selector" /></div>
+							<div class="checkbox-checkall checkall-label"><wicket:message key="checkAll"></wicket:message></div>
+						</div>
+					</div>					
+				</div>
+				<div wicket:id="necessaryFor">
+					<div class="generic-input-container">
+						<div class="column left">
+							<label class="form-label" wicket:id="necessaryForLabel"></label>
+						</div>
+						<div class="column">        
+		                	<div class="checkbox-items">
+								<div wicket:id="necessaryForView">	   
+		                           	<input type="checkbox" wicket:id="checkbox"/>
+		                           	<span wicket:id="title"></span>
+								</div>
+							</div>
+							<div class="checkbox-checkall"><input type="checkbox" wicket:id="selector" /></div>
+							<div class="checkbox-checkall checkall-label"><wicket:message key="checkAll"></wicket:message></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="column">			
+				<div wicket:id="relatedTo">
+					<div class="generic-input-container">
+						<div class="column left">
+							<label class="form-label" wicket:id="relatedToLabel"></label>
+						</div>
+						<div class="column">        
+		                	<div class="checkbox-items">
+								<div wicket:id="relatedToView">	   
+		                           	<input type="checkbox" wicket:id="checkbox"/>
+		                           	<span wicket:id="title"></span>
+								</div>
+							</div>
+							<div class="checkbox-checkall"><input type="checkbox" wicket:id="selector" /></div>
+							<div class="checkbox-checkall checkall-label"><wicket:message key="checkAll"></wicket:message></div>
+						</div>
+					</div>
+				</div>
+				
+				<div wicket:id="duplicatedWith">
+					<div class="generic-input-container">
+						<div class="column left">
+							<label class="form-label" wicket:id="duplicatedWithLabel"></label>
+						</div>
+						<div class="column">        
+		                	<div class="checkbox-items">
+								<div wicket:id="duplicatedWithView">	   
+		                           	<input type="checkbox" wicket:id="checkbox"/>
+		                           	<span wicket:id="title"></span>
+								</div>
+							</div>
+							<div class="checkbox-checkall"><input type="checkbox" wicket:id="selector" /></div>
+							<div class="checkbox-checkall checkall-label"><wicket:message key="checkAll"></wicket:message></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</wicket:panel>
+	</body>
+</html>

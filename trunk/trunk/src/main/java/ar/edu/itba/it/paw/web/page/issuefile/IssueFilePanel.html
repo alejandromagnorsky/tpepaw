@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <wicket:panel>
+        	<div class="list-element-button-block">
+				<a class="button-tiny red" wicket:id="deleteIssueFileLink">
+					<div class="button-image-tiny eraseIcon"></div>
+				</a>
+			</div>
+            <div class="file-list-element-title">
+                <a href="" wicket:id="downloadLink"><span wicket:id="filename"></span></a> - 
+                <span wicket:id="sizeInKilobytes"></span> KB
+		    </div>
+            <div class="file-list-element-block">
+                <div><wicket:message key="uploadDate" class="bold"></wicket:message> <span wicket:id="datePanel"></span></div>
+                <div><wicket:message key="uploader" class="bold"></wicket:message> <span wicket:id="uploaderPanel"></span></div>
+            </div>
+        </wicket:panel>
+    </body>
+</html>

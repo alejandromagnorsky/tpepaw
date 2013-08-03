@@ -1,0 +1,297 @@
+<html>
+<body>
+	<wicket:extend>	
+			<div id="content-border"></div>
+			<div id="content-header">
+				<div id="content-header-breadcrumbs" wicket:id="breadcrumbsPanel"></div>				
+				<div id="content-header-title">
+					<span wicket:id="title"></span>
+				</div>
+					
+				<div id="content-header-description">
+					<div class="header-item"> 
+					</div>
+					<div class="header-item"> 
+						<span class="bold"><wicket:message key="project" /></span>: <a href="" wicket:id="link"><span wicket:id="project"></span></a><br/>
+						<span class="bold"><wicket:message key="code" /></span>: <span wicket:id="code" class="bold"></span><br />
+						<span class="bold"><wicket:message key="date" /></span> <span wicket:id="date"></span>
+						<span class="bold"><wicket:message key="reportedUser" /></span> <span wicket:id="reportedUser"></span><br />
+						<div wicket:id="estimatedTimePanel"></div>						
+						<div wicket:id="assignedUserPanel"></div>
+						<span class="bold"><wicket:message key="state" /></span>: <span wicket:id="state"></span><br />
+						<span class="bold"><wicket:message key="type" /></span>: <span wicket:id="type"></span><br />
+						<span class="bold"><wicket:message key="priority" /></span>: <span wicket:id="priority"></span><br />						
+						<div wicket:id="resolutionPanel"></div>			
+						<span class="bold"><wicket:message key="votes" /></span>: <span wicket:id="votes"></span><br />	
+					
+					
+						<div class="form-wrapper">
+							<form class="generic-form" wicket:id="setResolutionForm">
+								<div wicket:id="feedback" class="formErrors"></div>
+								<div class="description-input-container">
+									<label class="form-label"><wicket:message key="setResolution"></wicket:message> </label>
+									<select wicket:id="resolution" />
+								</div>		
+							</form>
+						</div>
+					
+					</div>
+					
+					<br/>
+				</div>
+					
+				<div id="content-header-alternative">
+					<div class="header-item-title">
+						<wicket:message key="recentChanges"></wicket:message>
+					</div>
+					
+					<div id="content-header-alternative-wrapper">
+						<div wicket:id="recentChanges" class="header-item-mini">
+							<div class="header-paragraph-small">
+								<span class="bold"><wicket:message key="by"></wicket:message></span>: <span wicket:id="source"></span>
+								(<span wicket:id="date"></span>)<br />
+								<span class="bold"><wicket:message key="type"></wicket:message></span>: <span wicket:id="type"></span><br />
+								<span class="bold"><wicket:message key="previous"></wicket:message></span>: <span wicket:id="previous"></span><br />
+								<span class="bold"><wicket:message key="actual"></wicket:message></span>: <span wicket:id="actual"></span>
+							</div>							
+						</div>						
+					</div>
+				</div>
+				
+				<div id="content-header-buttons">
+					
+					
+					<a class="button-big orange " href="" wicket:id="editIssueLink">
+						<div class="button-image editIcon"><wicket:message key="editIssueHint"/></div>
+						<div class="button-link">
+							<wicket:message key="editIssue"/>
+						</div>
+					</a>
+					
+					<a wicket:id="workList" class="button-small yellow" href="">
+						<div class="button-image-small workIcon"></div>
+						<div class="button-link">
+							<wicket:message key="workList"/>
+						</div>
+					</a>
+					
+					<a class="button-small red" href="" wicket:id="closeLink">
+						<div class="button-image-small closeIcon"></div>
+						<div class="button-link">
+							<wicket:message key="closeIssue"/>
+						</div>
+					</a>
+					
+					<a class="button-small green" href="" wicket:id="viewIssueFilesLink">
+						<div class="button-image-small fileIcon"></div>
+						<div class="button-link">
+							<wicket:message key="fileList"/>
+						</div>
+					</a>
+					
+					<a wicket:id="vote" class="button-small orange" href="">
+						<div class="button-image-small button-hoverable voteIcon"><span wicket:id="voteHint"></span></div>
+						<div class="button-link">
+							<wicket:message key="vote"/>
+						</div>
+					</a>
+					
+							
+					<a class="button-small green" href="" wicket:id="manageIssueRelationsLink">
+						<div class="button-image-small relationsIcon"></div>
+						<div class="button-link">
+							<wicket:message key="issueRelations"/>
+						</div>
+					</a>
+					
+					
+					<a class="button-small orange" href="" wicket:id="followLink">
+						<div class="button-image-small button-hoverable  followIcon"><span wicket:id="followHint"></span></div>
+						<div class="button-link">
+							<wicket:message key="follow"/>
+						</div>
+					</a>
+					
+					
+					
+					<a wicket:id="collaborators" class="button-big blue rightFloat" href="">
+						<div class="button-image collaboratorIcon"><wicket:message key="collaboratorsHint"/></div>
+						<div class="button-link">
+							<wicket:message key="collaborators"/>
+						</div>
+					</a>	
+					
+					<a class="button-small blue" wicket:id="assignLink" href="">
+						<div class="button-image-small assignIcon"></div>
+						<div class="button-link">
+							<wicket:message key="assignIssue"/>
+						</div>
+					</a>
+					
+					<a class="button-small violet" href="" wicket:id="markLink">
+						<div class="button-image-small button-hoverable markIcon"><span wicket:id="markLabel"></span></div>
+						<div class="button-link">
+							<wicket:message key="markIssue"/>
+						</div>
+					</a>
+					
+									
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+			
+			
+			<div class="content-main">
+						<div id="content-main-header-subtitle">
+							<wicket:message key="progress"/>
+						</div>
+					
+				<span wicket:id="progress"></span><br />						
+					<div class="bar">
+						<div wicket:id="progressBarContent"></div>
+					</div>		
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+						<div id="content-main-header-title">
+							<wicket:message key="additionalInfo"/>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			
+			
+				<div class="content-block">
+					<div class="header-item-title">
+						<wicket:message key="description"/>
+					</div>
+					<div class="header-paragraph">
+						<span wicket:id="description"></span> 
+					</div>
+					
+					<div class="header-item-title">
+						<wicket:message key="collaborators"/>
+					</div>
+					<div class="header-paragraph">
+						<div class="leftFloat" wicket:id="collaboratorList" >
+							<span wicket:id="user"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</div>
+					
+					<div class="header-item-title">
+						<wicket:message key="followers"/>
+					</div>
+					<div class="header-paragraph">
+						<div class="leftFloat" wicket:id="followersList" >
+							<span wicket:id="user"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</div>
+				
+					<div class="header-item-title">
+						<wicket:message key="affectedVersions"/>
+					</div>
+					<div class="header-paragraph">
+						<div class="leftFloat"  wicket:id="affectedVersions" >
+							<span wicket:id="version"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</div>
+					
+					<div class="header-item-title">
+						<wicket:message key="fixedVersions"/>
+					</div>
+					<div class="header-paragraph">
+						<div class="leftFloat" wicket:id="fixedVersions" >
+							<span wicket:id="version"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</div>
+				</div>
+				
+				<div class="content-block">
+				
+					<div class="header-item-title">
+						<wicket:message key="dependsOnList"/>
+					</div>
+					<div class="header-paragraph">
+						<div class="leftFloat" wicket:id="dependsOnList" >
+							<a href="" wicket:id="issueLink"><span wicket:id="issue"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</div>
+				
+					<div class="header-item-title">
+						<wicket:message key="necessaryForList"/>
+					</div>
+					<div class="header-paragraph">
+						<div class="leftFloat" wicket:id="necessaryForList" >
+							<a href="" wicket:id="issueLink"><span wicket:id="issue"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</div>
+					
+					<div class="header-item-title">
+						<wicket:message key="relatedToList"/>
+					</div>
+					<div class="header-paragraph">
+						<div class="leftFloat" wicket:id="relatedToList" >
+							<a href="" wicket:id="issueLink"><span wicket:id="issue"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</div>
+					
+					<div class="header-item-title">
+						<wicket:message key="duplicatedWithList"/>
+					</div>
+					<div class="header-paragraph">
+						<div class="leftFloat" wicket:id="duplicatedWithList" >
+							<a href="" wicket:id="issueLink"><span wicket:id="issue"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+						<div id="content-main-header-title">
+							<wicket:message key="commentList"/>
+						</div>
+					</div>
+				</div>
+					
+				<div class="clear"></div>		
+				<div wicket:id="commentList" class="list-element">
+					<div class="list-element-body">
+						<span class="quoted"><wicket:message key="quote"/></span>
+						<span wicket:id="description"></span>		
+						<span class="quoted"><wicket:message key="unquote"/></span>			
+					</div>
+					<div class="list-element-title">
+						<wicket:message key="commentedAt"/>
+						<span wicket:id="date"></span> 
+						<wicket:message key="commentedBy"/>
+						<span wicket:id="user"></span><br/>
+					</div>
+					<div class="clear"></div>							
+				</div>
+				
+				
+				<div class="form-wrapper">
+					<form class="generic-form" wicket:id="addCommentForm">
+						<div id="content-main-header-subtitle">
+							<wicket:message key="publishComment"/>
+						</div>
+						<div wicket:id="commentFormPanel"></div>
+						<input class="submit-button" type="submit" wicket:id="addComment"></input>
+					</form>
+				</div>
+				
+			</div>
+			
+	</wicket:extend>
+</body>
+</html>

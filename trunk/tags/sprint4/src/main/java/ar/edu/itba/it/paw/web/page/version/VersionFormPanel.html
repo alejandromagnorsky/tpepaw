@@ -1,0 +1,41 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div wicket:id="feedback" class="formErrors"></div>
+			<div class="requiredFields">* <wicket:message key="requiredFields"></wicket:message></div>
+			<div class="generic-input-container">
+				<div class="column left">
+					<label class="form-label"><wicket:message key="name"></wicket:message> *</label>
+				</div>
+				<div class="column">
+					<input type="text" size="25" maxlength="25" wicket:id="name" />
+				</div>
+			</div>		
+			<div class="description-input-container">
+				<div class="column left">
+					<label class="form-label"><wicket:message key="description"></wicket:message></label>
+				</div>
+				<div class="column">
+					<textarea rows="5" cols="40" wicket:id="description"></textarea>
+				</div>
+			</div>		
+			<div class="generic-input-container">
+				<div class="column left">
+					<label class="form-label"><wicket:message key="releaseDate"></wicket:message> *</label>
+				</div>
+				<div class="column">
+					<input type="text" size="25" maxlength="25" wicket:id="releaseDate" />
+				</div>
+			</div>	
+				<div class="generic-input-container">
+				<div class="column left">
+					<label class="form-label"><wicket:message key="state"></wicket:message> *</label>
+				</div>
+				<div class="column">
+					<select wicket:id="state" />
+				</div>
+			</div>		
+			
+		</wicket:panel>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <wicket:extend>
+			<div class="clear"></div>				
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+                		<div id="content-header-breadcrumbs" wicket:id="breadcrumbsPanel"></div>
+						<div id="content-main-header-title">
+                       		<wicket:message key="issueFileListTitle"></wicket:message>
+						</div>
+					</div>
+				</div>				
+								
+				<form class="content-file-upload" wicket:id="uploadIssueFileForm">
+					<div wicket:id="feedback" class="formErrors"/>
+					<div class="filer-input-container">
+						<input class="file-input" wicket:id="file" type="file"/>
+						<input class="file-submit" type="submit" wicket:id="uploadIssueFile"/>
+						<!-- <div class="file-progress" wicket:id="progress"></div> -->
+					</div>
+				</form>
+				
+				<div class="clear"></div>
+                <div wicket:id="issueFiles" class="list-element">
+					<div class="list-element-body">
+						<div wicket:id="issueFilePanel" />												
+					</div>
+					<div class="clear"></div>
+                </div>
+			</div>
+        </wicket:extend>
+    </body>
+</html>

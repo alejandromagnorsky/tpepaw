@@ -1,0 +1,121 @@
+<html>
+<body>
+	<wicket:extend>	
+			<div id="content-border"></div>
+			<div id="content-header">
+				<div id="content-header-title">
+					<span wicket:id="name"></span>
+				</div>
+					
+				<div id="content-header-description">
+					<div wicket:id="projectPanel"></div>
+				</div>
+					
+				<div id="content-header-alternative" wicket:id="recentChangesContainer">
+					<div class="header-item-title">
+						<wicket:message key="recentChanges"></wicket:message>
+					</div>
+					
+					<div id="content-header-alternative-wrapper">
+						<div wicket:id="recentChanges" class="header-item-mini">
+							<div class="header-item-title-small">
+								<a href="" wicket:id="link" class="header-link"><span wicket:id="issue"></span></a>
+							</div>
+							<div class="header-paragraph-small">
+								<span class="bold"><wicket:message key="by" class="bold"></wicket:message></span>: <span wicket:id="source"></span>
+								(<span wicket:id="date"></span>)<br />
+								<span class="bold"><wicket:message key="type"></wicket:message></span>: <span wicket:id="type"></span><br />
+								<span class="bold"><wicket:message key="previous"></wicket:message></span>: <span wicket:id="previous"></span><br />
+								<span class="bold"><wicket:message key="actual"></wicket:message></span>: <span wicket:id="actual"></span>
+							</div>							
+						</div>						
+					</div>
+				</div>
+				
+				<div id="content-header-buttons">
+				
+					<a href="" wicket:id="editProject">
+						<div class="button-big orange">
+							<div class="button-image editIcon"><wicket:message key="editProjectHint"></wicket:message></div>
+							<div class="button-link">
+								<wicket:message key="editProject"></wicket:message>
+							</div>
+						</div>
+					</a>
+					
+					<a href="" wicket:id="viewIssuesLink">
+						<div class="button-small yellow">
+							<div class="button-image-small markIcon"><wicket:message key="issuesListHint"></wicket:message></div>
+							<div class="button-link">
+								<wicket:message key="issues"></wicket:message>
+							</div>
+						</div>
+					</a>
+					
+					<a href="" wicket:id="viewUsersLink">
+						<div class="button-small blue">
+							<div class="button-image-small usersIcon"><wicket:message key="projectUsersHint"></wicket:message></div>
+							<div class="button-link">
+								<wicket:message key="projectUsers"></wicket:message>
+							</div>
+						</div>
+					</a>
+					
+					<a href="" wicket:id="viewFiltersLink">
+						<div class="button-small green">
+							<div class="button-image-small filterIcon"><wicket:message key="filterListHint"></wicket:message></div>
+							<div class="button-link">
+								<wicket:message key="filters"></wicket:message>
+							</div>
+						</div>
+					</a>
+					
+					<a href="" wicket:id="viewWorkReportLink">
+						<div class="button-small yellow">
+							<div class="button-image-small reportIcon"><wicket:message key="workReportHint"></wicket:message></div>
+							<div class="button-link">
+								<wicket:message key="workReport"></wicket:message>
+							</div>
+						</div>
+					</a>
+					
+					<div class="clear"></div>
+					
+					<a href=""  wicket:id="versionList">
+					<div class="button-big green" >
+						<div class="button-image versionsIcon"><wicket:message key="versionsHint"></wicket:message></div>
+						<div class="button-link">
+							<wicket:message key="versions"></wicket:message>
+						</div>
+					</div>
+					</a>
+					
+					<a href="" wicket:id="viewStatus">
+						<div class="button-big violet">
+							<div class="button-image stateIcon"><wicket:message key="viewStatusHint"></wicket:message></div>
+							<div class="button-link">
+								<wicket:message key="viewStatus"></wicket:message>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="content-main">
+				<div wicket:id="tabs" class="tabpanel"></div>
+				<!--<div class="form-wrapper">
+					<form class="generic-form" wicket:id="defaultViewForm">
+						<div wicket:id="feedback" class="formErrors"></div>
+						<div class="description-input-container">
+							<label class="form-label"><wicket:message key="setView"></wicket:message> </label>
+							<select wicket:id="view" />
+						</div>		
+					</form>
+				</div>-->
+			</div>
+			
+	</wicket:extend>
+</body>
+</html>

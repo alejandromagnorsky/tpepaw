@@ -1,0 +1,26 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div wicket:id="feedback" class="formErrors"></div>
+			<div class="requiredFields">* <wicket:message key="requiredFields"></wicket:message></div>
+
+			<div class="generic-input-container">
+				<div class="column left">
+					<label class="form-label"><wicket:message key="fromDate"></wicket:message> *</label>
+				</div>
+				<div class="column">
+					<input type="text" size="25" maxlength="25" wicket:id="fromDate" />
+				</div>
+			</div>	
+			<div class="generic-input-container">
+				<div class="column left">
+					<label class="form-label"><wicket:message key="toDate"></wicket:message> *</label>
+				</div>
+				<div class="column">
+					<input type="text" size="25" maxlength="25" wicket:id="toDate" />
+				</div>
+			</div>	
+			
+		</wicket:panel>
+	</body>
+</html>
