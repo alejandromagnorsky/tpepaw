@@ -1,0 +1,257 @@
+.spacer {
+	clear:both;
+}
+
+.button-spacer {
+	clear:both;
+	height: 10px;
+}
+
+#form-style {
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.requiredFields {
+	font-weight: bold;
+	font-style: italic;
+	padding-bottom: 14px;
+}
+
+.form-left-column {
+	float:left;
+	margin-left:100px;
+	width: 350px;
+}
+
+.issue-view-left-column {
+	float:left;
+	width: 590px;
+	border-right: 1px dotted;
+}
+
+.issue-view-right-column {
+	float:left;
+	width: 280px;
+	margin-left: 35px;
+}
+
+.column-wrapper {
+	display: table-cell;
+}
+
+.form-center-column {
+	margin-left:240px;
+	width: 350px;
+}
+
+#form-description {
+	width: 100%;
+	height: 100px;
+}
+
+.form-right-column {
+	float:left;
+	width: 400px;
+}
+
+#form-style input.file-input {
+	margin-right: 90px;
+	margin-bottom: 0;
+}
+
+#attachfileform {
+	height: 70px;
+}
+
+#newrelationform {
+	height: 500px;
+}
+
+#form-style #newrelationform input.form-button {
+	width: 125px;
+	margin-top: 40px;
+}
+
+#attachfileform-title, #newrelationform-title {
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+#form-style input.form-button {
+	width: 125px;
+}
+
+#form-style input.form-button.attachfile {
+	height: 21px;
+	border: 0;
+	width: 85px;
+}
+
+#form-style div.form-buttons {
+	margin-top: 10px;
+	margin-left:140px;
+}
+
+#form-style input.visibility-radio {
+	margin-right: 5px;
+	margin-top: 0px;
+}
+
+#form-style div.visibility-radio1 {
+	float:left;
+}
+
+#form-style div.visibility-radio2 {
+	float:right;
+}
+
+#form-style div.visibility-radios {
+	float: left;
+}
+
+#form-style h1 {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:8px;
+}
+
+#form-style p {
+	font-size:11px;
+	color:#666666;
+	margin-bottom:20px;
+	border-bottom:solid 1px #b7ddf2;
+	padding-bottom:10px;
+}
+
+#form-style label {
+	display:block;
+	font-weight:bold;
+	text-align:right;
+	width:140px;
+	margin-bottom:10px;
+	float:left;
+}
+
+#form-style .form-hint {
+	color:#666666;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	text-align:right;
+	width:140px;
+}
+
+#form-style input {
+	width:160px;
+	float:left;
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	margin:2px 0 30px 10px;
+}
+
+#form-style input[type="radio"]  {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.action-radio {
+	height: 67px;
+}
+
+.line-item {
+    height: 46px;
+    padding-top: 10px;
+    margin-left: 100px;
+}
+
+#line-spacer {
+	border-bottom: 2px dashed #627AAD;
+    border-color: #000000 #000000 #627AAD;
+    margin-bottom: 15px;
+}
+
+#form-style select {
+	float:left;
+	font-size:12px;
+	border:solid 1px #aacfe4;
+	width:160px;
+	margin:2px 0 20px 10px;
+	background-color: #FFFFFF;
+}
+
+#form-style textarea {
+	float:left;
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	width:160px;
+	height:260px;
+	margin:2px 0 20px 10px;
+}
+
+.error-message {
+	color: #8a1f21;
+}
+
+.error-message-center {
+	color: #8a1f21;
+	font-size: 9pt;
+	margin-left:100px;
+}
+
+#login-submit:hover {
+    cursor: pointer;
+}
+
+#login-submit {
+    font-weight: bolder;
+    font-size: 12pt;
+    color: #fff;
+    margin-top: 5px;
+    background-image: url("../resources/images/submit-button.png");
+    background-color: "transparent";
+    border: none;
+    overflow: visible;
+    width: 91px;
+    height: 33px;
+}
+
+.checkboxContainer {
+	max-height: 100px;
+	max-width: 210px;
+	float: left;
+	padding: 5px 0 0 10px;
+	margin-left: 10px;
+	background-color: #fff;
+	border:solid 1px #aacfe4;
+	overflow-y: scroll;
+	overflow-x: auto;
+	margin-bottom: 10px;
+}
+
+#newrelationform div.checkboxContainer {
+	height: 100px;
+}
+
+.checkboxItem {
+	position: relative;
+	height: 20px;
+}
+
+.checkboxContainer input {
+	margin: 0 10px 0 0 !important;
+	padding: 0 !important;
+	width: 10px !important; 
+}
+
+.checkboxContainer span {
+	float: left;
+}
+
+.checkboxContainer label {
+	text-align: left !important;
+	float: left;
+}

@@ -1,0 +1,40 @@
+<html>
+	<body>
+		<wicket:extend>				
+			<div class="clear"></div>
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+						<div id="content-header-breadcrumbs" wicket:id="breadcrumbsPanel"></div>
+						<div id="content-main-header-title">
+							<wicket:message key="workListTitle"></wicket:message>
+						</div>
+					</div>
+					<a href="" wicket:id="addWork" class="button-small green" >
+						<div class="button-image-small addIcon"></div>
+						<div class="button-link">
+							<wicket:message key="addWork"/>
+						</div>
+					</a>
+				</div>
+				
+				<div class="clear"></div>
+				
+				<div wicket:id="works" class="list-element">
+					<div class="list-element-body">
+					<a href="" wicket:id="editWork" class="button-small blue" >
+							<div class="button-image-small userPanelIcon"></div>
+							<div class="button-link">
+								<wicket:message key="editWork"/>
+							</div>
+					</a>
+						<wicket:message key="user" class="bold"></wicket:message>: <span wicket:id="user"></span><br/>
+						<wicket:message key="date" class="bold"></wicket:message>: <span wicket:id="date"></span><br/>						
+						<wicket:message key="dedicatedTime" class="bold"></wicket:message>: <span wicket:id="dedicatedTime"></span><br/>
+						<wicket:message key="description" class="bold"></wicket:message>: <span wicket:id="description"></span>					
+					</div>							
+				</div>
+			</div>
+		</wicket:extend>
+	</body>
+</html>

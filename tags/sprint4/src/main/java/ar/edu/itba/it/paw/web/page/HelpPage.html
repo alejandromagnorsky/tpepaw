@@ -1,0 +1,87 @@
+<html>
+	<body>
+		<wicket:extend>
+			<div id="content-border"></div>
+			<div id="content-header">
+				<div id="content-header-title">
+					<wicket:message key="help"></wicket:message>
+				</div>
+				<br />
+				<div id="content-header-description">
+					<div id="helpContents">
+						<span id="helpIndexTitle"><wicket:message key="content"></wicket:message></span>
+						<ol>
+							<li>
+								<wicket:message key="projects"></wicket:message>
+								<ul>
+									<li><a href="#addProjectHelp"><wicket:message key="addProject"></wicket:message></a></li>
+									<li><a href="#projectStatusHelp"><wicket:message key="projectStatus"></wicket:message></a></li>
+								</ul>
+							</li>
+							<li>
+								<wicket:message key="issues"></wicket:message>
+								<ul>
+									<li><a href="#addIssueHelp"><wicket:message key="addIssue"></wicket:message></a></li>
+									<li><a href="#editIssueHelp"><wicket:message key="editIssue"></wicket:message></a></li>
+								</ul>
+							</li>
+							<li>
+								<wicket:message key="users"></wicket:message>
+								<ul>
+									<li><a href="#registerHelp"><wicket:message key="registerUser"></wicket:message></a></li>
+									<li><a href="#invalidateUserHelp"><wicket:message key="invalidateUser"></wicket:message></a></li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="content-main">
+				<div id="content-main-element">		
+					<div class="helpTopicTitle"><wicket:message key="projects"></wicket:message></div>
+					<div class="helpSection">				
+						<div id="addProjectHelp" class="helpTitle"><wicket:message key="addProject"></wicket:message></div>
+							<p>
+								<wicket:message key="addProjectContent"></wicket:message>
+							</p>
+						</div>
+						<div class="helpSection">
+							<div id="projectStatusHelp" class="helpTitle"><wicket:message key="projectStatus"></wicket:message></div>
+								<p>
+									<wicket:message key="projectStatusContent"></wicket:message>
+								</p>
+						</div>
+						<div class="helpTopicTitle"><wicket:message key="issues"></wicket:message></div>
+						<div class="helpSection">				
+							<div id="addIssueHelp" class="helpTitle"><wicket:message key="addIssue"></wicket:message></div>
+								<p>
+									<wicket:message key="addIssueContent"></wicket:message>
+								</p>
+						</div>
+						<div class="helpSection">
+							<div id="editIssueHelp" class="helpTitle"><wicket:message key="editIssue"></wicket:message></div>
+								<p>
+									<wicket:message key="editIssueContent"></wicket:message>
+								</p>
+						</div>
+						<div class="helpTopicTitle"><wicket:message key="users"></wicket:message></div>
+						<div class="helpSection">				
+							<div id="registerHelp" class="helpTitle"><wicket:message key="registerUser"></wicket:message></div>
+								<p>
+									<wicket:message key="registerUserContent"></wicket:message>
+								</p>
+						</div>
+						<div class="helpSection">
+							<div id="invalidateUserHelp" class="helpTitle"><wicket:message key="invalidateUser"></wicket:message></div>
+								<p>
+									<wicket:message key="invalidateUserContent"></wicket:message>
+								</p>
+						</div>
+					</div>
+				</div>
+		</wicket:extend>
+	</body>
+</html>

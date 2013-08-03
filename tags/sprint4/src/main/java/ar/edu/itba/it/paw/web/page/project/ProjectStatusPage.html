@@ -1,0 +1,38 @@
+<html>
+	<body>
+		<wicket:extend>
+			<div id="content-border"></div>
+			<div id="content-header">
+				<div id="content-header-breadcrumbs" wicket:id="breadcrumbsPanel"></div>	
+				<div id="content-header-title">
+					<wicket:message key="state" class="mainbar-title-text"></wicket:message>
+				</div>
+				<div id="content-header-description">
+					<div wicket:id="projectPanel"></div>
+				</div>
+				<div>
+					<img wicket:id="versionsChart" src="" width="675" height="315" alt="" />
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="content-main">
+				<div id="content-main-element">	
+					<table id="status-table">
+						<thead>
+							<tr><th scope="col"><wicket:message key="type"></wicket:message></th><th scope="col"><wicket:message key="quant"></wicket:message></th><th scope="col"><wicket:message key="estimatedTime"></wicket:message></th></tr>
+						</thead>
+						<tbody>
+							<tr wicket:id="states">
+								<td><span wicket:id="state"></span></td>
+								<td><span wicket:id="stateQuant"></span></td>
+								<td><span wicket:id="estimatedTime"></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</wicket:extend>
+	</body>
+</html>

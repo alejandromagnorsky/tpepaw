@@ -1,0 +1,33 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div class="header-item"> 
+				<wicket:message key="visibility" class="bold"></wicket:message><span wicket:id="visibility"></span>
+			</div>
+			<div class="header-item"> 
+				<wicket:message key="leader" class="bold"></wicket:message>: <span wicket:id="leader"></span>
+			</div>
+			<div class="header-item"> 
+				<wicket:message key="code" class="bold"></wicket:message>: <span wicket:id="code"></span>
+			</div>
+			<br/>
+			<div class="header-item-title">
+				<wicket:message key="description"></wicket:message>
+			</div>
+			<div class="header-paragraph">
+				<span wicket:id="description"></span> 
+			</div>
+			
+			<br />
+						
+			<div class="header-item-title">
+				<wicket:message key="users"></wicket:message>
+			</div>					
+			<div class="header-paragraph">
+				<div wicket:id="users">
+					<span wicket:id="name"></span>
+				</div>							 
+			</div>
+		</wicket:panel>
+	</body>
+</html>

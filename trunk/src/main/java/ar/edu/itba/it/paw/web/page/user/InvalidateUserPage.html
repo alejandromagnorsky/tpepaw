@@ -1,0 +1,33 @@
+<html>
+	<body>
+		<wicket:extend>
+			<div class="clear"></div>
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+						<div id="content-main-header-title">
+							<wicket:message key="invalidateUser"></wicket:message>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="form-wrapper">
+					<form class="generic-form" wicket:id="invalidateUserForm">
+						<div wicket:id="feedback" class="formErrors"/>
+						<div class="requiredFields">* <wicket:message key="requiredFields"></wicket:message></div>
+						<div class="generic-input-container">
+							<div class="column left">
+								<label class="form-label"><wicket:message key="user"></wicket:message> *</label>
+							</div>
+							<div class="column">
+								<select wicket:id="user" />
+							</div>
+						</div>
+						<input class="submit-button" type="submit" wicket:id="invalidateUser" />
+					</form>
+				</div>
+			</div>
+		</wicket:extend>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<%@ include file="../header.jsp" %>
+<%@ page pageEncoding="UTF-8" %>
+	<div id="content">
+		
+		<div id="mainbar">
+			<div class="mainbar-title">Quitar usuario de <c:out value="${project.name}"/></div>
+			<div class="mainbar-details">
+				<div id="form-style" class="new-project-form">
+					<form:form action="../project/removeUser" method="POST" commandName="projectUserForm">
+						<div class="requiredFields">* Campos requeridos.</div>
+						<div class="form-center-column">
+							<form:input type="hidden" path="project"/>
+							<form:input type="hidden" path="source" />
+						
+							<label>Nombre *
+								<span class="error-message"><form:errors path="project" /></span>
+							</label>
+							<form:select path="target">
+								<form:options items="${project.users}" itemLabel="name" />
+							</form:select>
+							
+							<div class="form-buttons">
+								<input class="form-button" type="submit" value="Quitar usuario" />
+							</div>
+						</div>						
+						<div class="spacer"></div>
+					</form:form>
+				</div>
+			</div>
+		</div>
+	
+	</div>	
+</div>
+
+
+<%@ include file="../footer.jsp" %>

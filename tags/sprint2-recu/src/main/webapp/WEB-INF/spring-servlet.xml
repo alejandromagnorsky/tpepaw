@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+         http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context-3.0.xsd
+         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+	<context:component-scan base-package="ar.edu.itba.it.paw" />
+
+
+	<bean id="exceptionHandler" class="ar.edu.itba.it.paw.web.log.ExceptionHandler" />
+
+	<bean
+		class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" />
+
+	<mvc:annotation-driven conversion-service="conversionService" />
+	<bean id="conversionService"
+		class="ar.edu.itba.it.paw.web.formatter.EnhancedFormattingConversionServiceFactoryBean">
+		<property name="formatters">
+			<map>
+				<entry key="ar.edu.itba.it.paw.model.User">
+					<bean class="ar.edu.itba.it.paw.web.formatter.UserFormatter" />
+				</entry>
+				<entry key="ar.edu.itba.it.paw.model.Project">
+					<bean class="ar.edu.itba.it.paw.web.formatter.ProjectFormatter" />
+				</entry>
+				<entry key="ar.edu.itba.it.paw.model.Issue">
+					<bean class="ar.edu.itba.it.paw.web.formatter.IssueFormatter" />
+				</entry>
+				<entry key="ar.edu.itba.it.paw.model.Time">
+					<bean class="ar.edu.itba.it.paw.web.formatter.TimeFormatter" />
+				</entry>
+				<entry key="ar.edu.itba.it.paw.model.Work">
+					<bean class="ar.edu.itba.it.paw.web.formatter.WorkFormatter" />
+				</entry>
+				<entry key="org.joda.time.DateTime">
+					<bean class="ar.edu.itba.it.paw.web.formatter.DateFormatter" />
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<bean id="viewNameTranslator"
+		class="org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator" />
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="/WEB-INF/messages/messages" />
+		<property name="cacheSeconds" value="0" />
+	</bean>
+</beans>

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Trackr</title>
+		<link href="css/style2.css" rel="stylesheet" type="text/css">
+		
+		<link href="css/forms2.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="resources/images/favicon.ico">
+	</head>
+	<body>
+		
+		<div id="content">
+			
+			<div id="header">
+				<a href="" wicket:id="home"><span id="logo" wicket:id="header"></span></a>
+				
+				<div id="header-utils">
+					<a href="" wicket:id="userProfileLink" class="button-big orange rightFloat">
+						<div class="button-image userPanelIcon"><wicket:message key="userProfile"/></div>
+						<div class="button-link">
+							<span wicket:id="username"></span>
+						</div>
+					</a>
+					
+					<a class="button-small blue rightFloat" href="" wicket:id="help">
+						<div class="button-image-small helpIcon"></div>
+						<div class="button-link">
+								<wicket:message key="help"/>
+						</div>
+					</a>	
+					
+					<a class="button-small green rightFloat"href="" wicket:id="login">
+						<div class="button-image-small loginIcon"></div>
+						<div class="button-link">
+							<wicket:message key="login"/>
+						</div>
+					</a>
+					
+					<a class="button-small orange rightFloat" href="" wicket:id="logout">
+						<div class="button-image-small closeIcon"></div>
+						<div class="button-link">
+							<wicket:message key="logout"/>
+						</div>
+					</a>
+					
+					
+					<a class="button-small green rightFloat"  href="" wicket:id="register">
+						<div class="button-image-small addIcon"></div>
+						<div class="button-link">
+							<wicket:message key="register"/>
+						</div>
+					</a>
+					
+					<a class="button-small red rightFloat" href="" wicket:id="invalidate">
+						<div class="button-image-small eraseIcon"></div>
+						<div class="button-link">
+							<wicket:message key="invalidate"/>
+						</div>
+					</a>		
+					
+				</div>		
+			</div>
+			
+			<wicket:child />
+			
+				
+			<div id="footer">
+				<span>	<wicket:message key="footer"/></span>
+			</div>
+		</div>
+		
+	</body>
+</html>

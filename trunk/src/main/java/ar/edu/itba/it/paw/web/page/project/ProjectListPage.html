@@ -1,0 +1,51 @@
+<html>
+	<body>
+		<wicket:extend>				
+			<div class="clear"></div>
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+						<div id="content-main-header-title">
+							<wicket:message key="projects"></wicket:message>
+						</div>
+					</div>
+					<a wicket:id="addProject"  class="button-small green" >
+						<div class="button-image-small addIcon"></div>
+						<div class="button-link">
+							<wicket:message key="addProject"/>
+						</div>
+					</a>
+						
+				</div>
+				
+				<div class="clear"></div>
+				
+				<div wicket:id="container">
+					<div class="container-main">
+						<div class="title-row">
+							<div class="title-cell project-code-column"><a href="" class="order-column-link" wicket:id="orderByCode"><wicket:message key="code"></wicket:message></a></div>
+							<div class="title-cell project-name-column"><a href="" class="order-column-link" wicket:id="orderByName"><wicket:message key="name"></wicket:message></a></div>
+							<div class="title-cell project-leader-column"><a href="" class="order-column-link" wicket:id="orderByLeader"><wicket:message key="leader"></wicket:message></a></div>
+						</div>						
+						<div class="clear divisor"></div>
+						<div class="content-row" wicket:id="projects">
+							<div class="content-cell project-code-column"><span wicket:id="code"></span></div>
+							<div class="content-cell project-name-column">
+								<div>
+									<a href="" wicket:id="viewProjectLink"><span class="project-name" wicket:id="name"></span></a>
+								</div>
+								<div class="project-visibility-column"><span class="project-visibility" wicket:id="visibility"></span></div>
+								<div class="project-description-column"><span wicket:id="description"></span></div>
+							</div>
+							<div class="content-cell project-leader-column" wicket:id="leader"></div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="navigator" wicket:id="navigator"></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</wicket:extend>
+	</body>
+</html>

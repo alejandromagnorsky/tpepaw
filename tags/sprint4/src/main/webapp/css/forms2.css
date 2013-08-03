@@ -1,0 +1,124 @@
+.form-wrapper {
+    margin-top: 20px;
+}
+
+.requiredFields {
+    font-size: 8pt;
+}
+
+.generic-form {
+}
+
+.formErrors {
+    color: #f00;
+}
+
+.generic-form select {
+    color: #333;
+	width: 150px;
+    font-size: 12pt;
+}
+
+.generic-form select:hover {
+    cursor: pointer;
+}
+
+.generic-form input {
+    background-color: #eee;
+    border: none;
+    font-size: 12pt;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.submit-button {
+    padding: 8px !important;
+    margin-top: 5px;
+    color: #53a4ff !important;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.submit-button:hover {
+    color: #96c5fa !important;
+    cursor: pointer;
+}
+  
+.column {
+	float: left;
+	margin-right: 15px;
+}
+
+.left {
+	width: 200px;
+}
+
+.radios-container{
+	height: 180px;
+}
+
+.generic-input-container {
+	height: 50px;
+	margin-right: 40px;
+}
+
+.checkbox-items {
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 2px dotted #FFFFFF;
+	max-width: 230px;
+	max-height: 200px;
+	padding: 5px;
+	margin-bottom: 5px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.checkbox-checkall {
+    float: left;	
+}
+
+.checkall-label {
+	padding: 2px;
+}
+
+
+.description-input-container {
+	height: 123px;
+	margin-right: 40px;
+}
+
+.form-label {
+	font-weight: bold;
+}
+
+table.palette td.header {
+	background-color: #1F1F1F !important;
+}
+
+.content-file-upload {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.file-input {
+	
+}
+
+.file-submit {
+	
+}
+
+.file-progress {
+	
+}
+
+.file-input-container {
+	float: left;
+}
+
+.submit-button-wrapper {
+	width: 100px;
+	margin-left: 500px;
+	margin-top: 25px;
+}

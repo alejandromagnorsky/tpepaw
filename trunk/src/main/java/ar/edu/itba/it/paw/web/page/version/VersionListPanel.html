@@ -1,0 +1,85 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div id="content-main-header">
+				<div id="content-main-header-wrapper">
+					<div id="content-header-breadcrumbs" wicket:id="breadcrumbs"></div>
+					<div id="content-main-header-title">
+						<div class="title-with-buttons">
+							<wicket:message key="versions"></wicket:message>
+						</div>
+						<a class="button-small green" wicket:id="addVersionLink">
+							<div class="button-image-small addIcon"></div>
+							<div class="button-link">
+								<wicket:message key="add"></wicket:message>
+							</div>
+						</a>
+					</div>
+					<div class="clear"></div>
+					<div id="content-main-header-subtitle">
+						<a href="" wicket:id="allVersions"><wicket:message key="allVersions"></wicket:message></a> | 
+						<a href="" wicket:id="nonReleasedVersions"><wicket:message key="nonReleased"></wicket:message></a>
+					</div>
+				</div>
+			</div>
+				
+			<div class="clear separator"></div>
+			
+			<div wicket:id="container">
+				<div class="container-main">
+					<div class="title-row">
+						<div class="title-cell version-edit-column"><span wicket:id="editVersionTitle"></span></div>
+						<div class="title-cell version-name-column"><a href="" class="order-column-link" wicket:id="orderByName"><wicket:message key="name"></wicket:message></a></div>
+						<div class="title-cell version-progress-column"><wicket:message key="progress"></wicket:message></div>
+						<div class="title-cell version-releaseDate-column"><a href="" class="order-column-link" wicket:id="orderByReleaseDate"><wicket:message key="releaseDate"></wicket:message></a></div>
+						<div class="title-cell version-state-column"><a href="" class="order-column-link" wicket:id="orderByState"><wicket:message key="state"></wicket:message></a></div>
+						<div class="title-cell version-delete-column"></div>
+					</div>
+					
+					<div class="clear divisor"></div>
+					
+					
+					<div class="content-row" wicket:id="versions">
+						<div class="content-cell version-edit-column">
+							<a class="button-tiny blue" wicket:id="editVersionLink">
+								<div class="button-image-tiny userPanelIcon"></div>
+							</a>
+						</div>
+						<div class="content-cell version-name-column">
+							<div><span class="version-name" wicket:id="name"></span></div>
+							<a href="" class="show-hide-button" wicket:id="showHideDetails"><span wicket:id="showHideLabel"></span></a>
+							<div class="version-hidden-attributes" wicket:id="hideable">
+								<div class="version-chart">
+									<img wicket:id="chart"></img>
+								</div>
+								<div class="version-description" wicket:id="descriptionPanel"></div>
+							</div>
+						</div>
+						<div class="content-cell version-progress-column">							
+							<div class="bar">
+								<div wicket:id="progressBarContent"></div>
+							</div>
+						</div>
+						<div class="content-cell version-releaseDate-column">
+							<span wicket:id="releaseDate"></span>
+						</div>
+						<div class="content-cell version-state-column">
+							<span wicket:id="state"></span>
+						</div>
+						<div class="content-cell version-delete-column">
+							<a class="button-tiny red" wicket:id="deleteVersionLink">
+								<div class="button-image-tiny eraseIcon"></div>
+							</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
+					
+					
+				</div>
+				<div class="clear"></div>
+				<div class="navigator" wicket:id="navigator"></div>
+			</div>			
+		</wicket:panel>
+	</body>
+</html>

@@ -1,0 +1,114 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div wicket:id="feedback" class="formErrors"/>
+			<div class="requiredFields">* <wicket:message key="requiredFields"></wicket:message></div>
+			<div class="column">
+				<div class="generic-input-container" wicket:id="namePanel"></div>				
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="issueCode"></wicket:message></label>
+					</div>
+					<div class="column">
+						<input type="text" size="25" maxlength="25" wicket:id="issueCode" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="issueTitle"></wicket:message></label>
+					</div>
+					<div class="column">
+						<input type="text" size="25" maxlength="25" wicket:id="issueTitle" />
+					</div>
+				</div>
+				<div class="description-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="issueDescription"></wicket:message></label>
+					</div>
+					<div class="column">
+						<textarea rows="5" cols="40" wicket:id="issueDescription"></textarea>
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="dateFrom"></wicket:message></label>
+					</div>
+					<div class="column">
+						<input type="text" size="25" maxlength="10" wicket:id="dateFrom" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="dateTo"></wicket:message></label>
+					</div>
+					<div class="column">
+						<input type="text" size="25" maxlength="10" wicket:id="dateTo" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="issueReportedUser"></wicket:message></label>
+					</div>
+					<div class="column">
+						<select class="form-select" wicket:id="issueReportedUser" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="issueAssignedUser"></wicket:message></label>
+					</div>
+					<div class="column">
+						<select wicket:id="issueAssignedUser" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="issueType"></wicket:message></label>
+					</div>
+					<div class="column">
+						<select wicket:id="issueType" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="issueState"></wicket:message></label>
+					</div>
+					<div class="column">
+						<select wicket:id="issueState" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="issueResolution"></wicket:message></label>
+					</div>
+					<div class="column">
+						<select wicket:id="issueResolution" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="affectedVersion"></wicket:message></label>
+					</div>
+					<div class="column">
+						<select wicket:id="affectedVersion" />
+					</div>
+				</div>
+				<div class="generic-input-container">
+					<div class="column left">
+						<label class="form-label"><wicket:message key="fixedVersion"></wicket:message></label>
+					</div>
+					<div class="column">
+						<select wicket:id="fixedVersion" />
+					</div>
+				</div>
+				
+				<div class="generic-input-container" wicket:id="actionPanel"></div>
+				
+			</div>
+			
+		</wicket:panel>
+	</body>
+</html>

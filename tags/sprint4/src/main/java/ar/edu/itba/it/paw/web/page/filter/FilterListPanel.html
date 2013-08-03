@@ -1,0 +1,75 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div id="content-main-header">
+				<div id="content-main-header-wrapper">
+					<div id="content-header-breadcrumbs" wicket:id="breadcrumbs"></div>
+					<div id="content-main-header-title">
+						<div class="title-with-buttons">
+							<wicket:message key="filters"></wicket:message>
+						</div>
+				
+						<a class="button-small green" wicket:id="addFilterLink">
+							<div class="button-image-small addIcon"></div>
+							<div class="button-link">
+								<wicket:message key="add"></wicket:message>
+							</div>
+						</a>
+					</div>
+					<div id="content-main-header-subtitle">
+					</div>
+				</div>
+			</div>
+				
+			<div class="clear separator"></div>
+			
+			<div wicket:id="container">
+				<div class="container-main">
+					<div class="title-row">
+						<div class="title-cell filter-edit-column"><span wicket:id="editFilterTitle"></span></div>
+						<div class="title-cell filter-name-column"><a href="" class="order-column-link" wicket:id="orderByName"><wicket:message key="name"></wicket:message></a></div>
+						<div class="title-cell filter-delete-column"></div>
+					</div>
+					
+					<div class="clear divisor"></div>
+					
+					<div class="content-row" wicket:id="filters">
+						<div class="content-cell filter-edit-column">
+							<a class="button-tiny blue" wicket:id="editFilterLink">
+								<div class="button-image-tiny userPanelIcon"></div>
+							</a>
+						</div>
+						<div class="content-cell filter-name-column">
+							<div>
+								<a href="" wicket:id="applyFilterLink"><span class="filter-name" wicket:id="name"></span></a>
+							</div>
+							<a href="" class="show-hide-button" wicket:id="showHideDetails"><span wicket:id="showHideLabel"></span></a>
+							<div class="filter-hidden-attributes" wicket:id="hideable">
+								<div class="filter-hidden-attribute" wicket:id="issueCodePanel"></div>
+								<div class="filter-hidden-attribute" wicket:id="issueTitlePanel"></div>
+								<div class="filter-hidden-attribute" wicket:id="issueReportedUserPanel"></div>
+								<div class="filter-hidden-attribute" wicket:id="issueAssignedUserPanel"></div>
+								<div class="filter-hidden-attribute" wicket:id="issueTypePanel"></div>
+								<div class="filter-hidden-attribute" wicket:id="issueStatePanel"></div>
+								<div class="filter-hidden-attribute" wicket:id="issueResolutionPanel"></div>
+								<div class="filter-hidden-attribute" wicket:id="affectedVersionPanel"></div>
+								<div class="filter-hidden-attribute" wicket:id="fixedVersionPanel"></div>
+								<div class="filter-hidden-attribute" wicket:id="dateFromPanel"></div>
+								<div class="filter-hidden-attribute" wicket:id="dateToPanel"></div>
+								<div class="filter-hidden-attribute description" wicket:id="issueDescriptionPanel"></div>
+							</div>
+						</div>
+						<div class="content-cell filter-delete-column">
+							<a class="button-tiny red" wicket:id="deleteFilterLink">
+								<div class="button-image-tiny eraseIcon"></div>
+							</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="navigator" wicket:id="navigator"></div>
+			</div>			
+		</wicket:panel>
+	</body>
+</html>

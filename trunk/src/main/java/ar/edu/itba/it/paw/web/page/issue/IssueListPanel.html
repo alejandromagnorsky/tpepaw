@@ -1,0 +1,74 @@
+<html>
+	<body>
+		<wicket:panel>
+			
+			<div class="clear"></div>
+
+			<div id="content-main-header">
+				<div id="content-main-header-wrapper">
+					<div id="content-header-breadcrumbs" wicket:id="breadcrumbs"></div>
+					<div id="content-main-header-title">
+						<div class="title-with-buttons">
+							<wicket:message key="issues"></wicket:message>
+						</div>
+						
+						<a class="button-small green rightFloat" wicket:id="addIssueLink">
+							<div class="button-image-small addIcon"></div>
+							<div class="button-link">
+								<wicket:message key="add"/>
+							</div>
+						</a>
+					</div>
+					<div class="clear"></div>
+					<div id="content-main-header-subtitle">
+						<a href="" wicket:id="allIssues"><wicket:message key="allIssues"></wicket:message></a> | 
+						<a href="" wicket:id="assignedIssues"><wicket:message key="assignedIssues"></wicket:message></a>
+					</div>
+				</div>
+			</div>
+				
+			<div class="clear"></div>
+			<div wicket:id="currentFilterPanel"></div>
+			<div class="clear"></div>
+			
+			<div wicket:id="container">
+				<div class="container-main">
+					<div class="title-row">
+						<div class="title-cell issue-code-column"><a href="" class="order-column-link" wicket:id="orderByCode"><wicket:message key="code"></wicket:message></a></div>
+						<div class="title-cell issue-title-column"><a href="" class="order-column-link" wicket:id="orderByTitle"><wicket:message key="issue"></wicket:message></a></div>
+						<div class="title-cell issue-assignedUser-column"><a href="" class="order-column-link" wicket:id="orderByAssignedUser"><wicket:message key="assignedUser"></wicket:message></a></div>
+						<div class="title-cell issue-estimatedTime-column"><a href="" class="order-column-link" wicket:id="orderByEstimatedTime"><wicket:message key="estimatedTime"></wicket:message></a></div>
+						<div class="title-cell issue-priority-column"><a href="" class="order-column-link" wicket:id="orderByPriority"><wicket:message key="priority"></wicket:message></a></div>
+						<div class="title-cell issue-type-column"><a href="" class="order-column-link" wicket:id="orderByType"><wicket:message key="type"></wicket:message></a></div>
+						<div class="title-cell issue-state-column"><a href="" class="order-column-link" wicket:id="orderByState"><wicket:message key="state"></wicket:message></a></div>
+					</div>
+					
+					<div class="clear divisor"></div>
+					
+					<div class="content-row" wicket:id="issues">
+						<div class="content-cell issue-code-column"><span wicket:id="code"></span></div>
+						<div class="content-cell issue-title-column">
+							<div>
+								<a href="" wicket:id="viewIssueLink"><span class="issue-title" wicket:id="title"></span></a>
+							</div>
+							<div class="issue-date-and-user">
+								<wicket:message key="createdOn"></wicket:message>
+								<span wicket:id="creationDate"></span>
+								<wicket:message key="reportedUser"></wicket:message>
+								<span wicket:id="reportedUser"></span>
+							</div>
+						</div>
+						<div class="content-cell issue-assignedUser-column" wicket:id="assignedUser"></div>
+						<div class="content-cell issue-estimatedTime-column" wicket:id="estimatedTime"></div>
+						<div class="content-cell issue-priority-column"><div wicket:id="priority"></div></div>
+						<div class="content-cell issue-type-column"><div wicket:id="type"></div></div>
+						<div class="content-cell issue-state-column"><div wicket:id="state"></div><div class="issue-resolution" wicket:id="resolution"></div></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="navigator" wicket:id="navigator"></div>
+			</div>			
+		</wicket:panel>
+	</body>
+</html>

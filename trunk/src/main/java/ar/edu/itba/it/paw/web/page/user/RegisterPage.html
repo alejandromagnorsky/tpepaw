@@ -1,0 +1,28 @@
+<html>
+	<body>
+		<wicket:extend>			
+			<div class="clear"></div>
+			<div class="content-main">
+				<div id="content-main-header">
+					<div id="content-main-header-wrapper">
+						<div id="content-main-header-title">
+							<wicket:message key="register"></wicket:message>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="form-wrapper">
+					<form class="generic-form" wicket:id="registerForm">
+						<div wicket:id="userFormPanel"></div>
+						<div wicket:id="captchaPanel"></div>
+						<div class="clear"></div>
+						<div class="submit-button-wrapper">			
+							<input class="submit-button" type="submit" wicket:id="register" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</wicket:extend>
+	</body>
+</html>
